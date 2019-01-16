@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>useredit</title>
+</head>
+<body>
+    <form action="/users/update" method="post">
+        <input type="hidden" name="id" value="<%= user._id %>">
+        <input type="text" name="username" value="<%= user.username %>">
+        <input type="text" name="password" value="<%= user.password %>">
+        <button type="submit">update</button>
+    </form>
+</body>
+</html>

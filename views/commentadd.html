@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>comment</title>
+</head>
+<body>
+    <form action="/topics/topic_detail/" method="post">
+        <p><%= topicdata %></p>
+        <input type="hidden" name="topicid" value="<%= topicdata._id %>">
+        <input type="text" name="comment" value="content">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
